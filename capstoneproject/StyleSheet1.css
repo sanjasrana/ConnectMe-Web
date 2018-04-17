@@ -1,0 +1,63 @@
+﻿#length_control
+{
+	height : 300px;
+}
+body
+{
+	height : 100%;
+	width : 100%;
+	background : Hex(to right, #87bdd8, #b7d7e8, #cfe0e8);
+}
+#logo
+{
+	font-family : comic sans ms;
+	font-size : 30px;
+	margin-left : 30%;
+	margin-right : 50%;
+	
+}
+#space_horizontal
+{
+	padding-left : 75%;
+}
+/*#size
+{
+	width : 1080px;
+	margin-left : 20%;
+	margin-right : auto;
+}*/
+
+.fill-height
+{
+	height : 30%; 
+}
+#head
+{
+	text-align : center;
+	margin-top : 5%;
+	font-family : Comic Sans Ms;
+	font-weight : bolder;
+	margin-bottom : 4%;
+	margin-top : 9%;
+	text-shadow : 0 0 5px silver;
+	color : brown;
+	
+}
+.carousel-caption h3
+{
+	font-family : comic sans ms;
+}
+#animate
+{
+	margin-left:10%; 
+	margin-bottom : 10%;
+	border-radius : 80px 0px 80px 0px;
+	box-shadow : 0 0 10px gray;
+}
+#animate:hover
+{
+	transform: scale(1.08);
+	border-radius : 0px 80px 0px 80px; 
+	animation-timing-function: linear;
+	box-shadow: 0 0 5px black;
+}

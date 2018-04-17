@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.Master.cs" Inherits="capstoneproject.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+	<title>Connect me</title>
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="NavigationContentPlaceHolder1" runat="server">
+             </asp:ContentPlaceHolder>
+            
+            <div class = "container-fluid">
+	
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="LandingPage.aspx" style="font-family:comic sans ms; font-size:23px;">Connect me</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="LandingPage.aspx">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Connect here</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li runat="server" id="UserLoggedIn">
+            <asp:LinkButton ID="hl_Profile" runat="server">
+                <span class="glyphicon glyphicon-user"></span>
+                <asp:Label ID="lbl_loggedInName" runat="server"></asp:Label>
+            </asp:LinkButton>
+        </li>
+      <li runat="server" id="SignUp"><a href="register.aspx"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li runat="server" id="LogIn"><a href="login.aspx"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li runat="server" id="LogOut">
+            <asp:LinkButton ID="lbtn_logout" runat="server" OnClick="lbtn_logout_Click">
+                <span class="glyphicon glyphicon-log-in"></span> Logout
+            </asp:LinkButton>
+        </li>
+    </ul>
+  </div>
+</nav>
+      
+        </div>
+       
+<asp:ContentPlaceHolder ID="MainContent" runat="server">
+</asp:ContentPlaceHolder>
+            </section>
+    </form>
+</body>
+</html>
